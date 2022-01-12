@@ -22,7 +22,6 @@ header {
 .main-image {
   width: 100%;
   max-width: 1920px;
-  height: 800px;
 }
 
 .About {
@@ -34,10 +33,11 @@ header {
 
 .icon {
   background-image: url("../img/divide.jpeg");
-  width: 300px;
-  height: 300px;
+  width: 100px;
+  height: 100px;
   background-position: center;
   margin: auto;
+  display: block;
   border-radius: 50%;
   margin-top: 70px;
   border: solid 5px #000000;
@@ -47,10 +47,7 @@ header {
   margin-top: 150px;
 }
 
-.item {
-  text-align: center;
-  text-decoration: underline;
-  font-size: 30px;
+.item::after {
 }
 
 #sample-imgs {
@@ -77,4 +74,33 @@ footer {
 .copy-right {
   font-size: 10px;
   text-align: center;
+}
+
+.about-session {
+  display: flex;
+  margin: auto;
+}
+
+.profile {
+  margin: 0 0 0 auto;
+  display: block;
+  max-width: 50%;
+  margin-top: 40px;
+}
+
+.about-session {
+  display: inline-block;
+  margin-right: 80px;
+}
+
+.content {
+  display: flex;
+}
+
+/* スマホ画面 */
+@media screen and (max-width: 480px) {
+  .main-image {
+    width: 100%;
+    max-width: 1975px;
+  }
 }
